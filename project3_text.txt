@@ -1,5 +1,5 @@
 Project  3:  Automated  Multi-Tier  Application  
-Deployment
+Deployment:
   
 Overview  In  this  project,  you  will  be  architecting  a  complete  deployment  pipeline.  You  are  tasked  with  
 taking
