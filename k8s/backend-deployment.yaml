@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: backend-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: age-guesser-backend
+  template:
+    metadata:
+      labels:
+        app: age-guesser-backend
+    spec:
+      containers:
+      - name: age-guesser-backend
+        image: DOCKERHUB_USERNAME/age-guesser-backend:latest
+        ports:
+        - containerPort: 5000
