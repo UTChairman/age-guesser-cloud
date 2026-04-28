@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: age-guesser-frontend
-        image: DOCKERHUB_USERNAME/age-guesser-frontend:latest
+        image: umartanvir007/age-guesser-frontend:latest
         ports:
         - containerPort: 8080

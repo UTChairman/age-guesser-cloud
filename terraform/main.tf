@@ -77,7 +77,7 @@ data "aws_ami" "ubuntu" {
 # 3. Create the EC2 Instance
 resource "aws_instance" "app_server" {
   ami           = data.aws_ami.ubuntu.id
-  instance_type = "t3.micro" # Using t3.micro as it is likely the Free Tier option in your region
+  instance_type = "t3.small" # Upgraded to 2GB RAM for smoother performance
   key_name      = "age_guesser_key" # We will create this key manually in AWS console
 
   vpc_security_group_ids = [aws_security_group.age_guesser_sg.id]

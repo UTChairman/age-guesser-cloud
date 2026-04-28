@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: age-guesser-backend
-        image: DOCKERHUB_USERNAME/age-guesser-backend:latest
+        image: umartanvir007/age-guesser-backend:latest
         ports:
         - containerPort: 5000
